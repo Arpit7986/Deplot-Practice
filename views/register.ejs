@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            height: 100vh;
+            background-image: url('https://img.freepik.com/free-vector/realistic-blurred-spring-background_52683-34521.jpg?w=996&t=st=1688618250~exp=1688618850~hmac=24316c8fb22a9215cce9b321e7fca8594e43429890e96d31139d7fb6b4b59b4a');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form{
+            display: block;
+            margin: auto;
+            width: 360px;
+            height: 460px;
+            margin-top: 7%;
+            border-radius: 7px;
+            border: 2px solid black;
+        }
+        #heading{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body >
+    
+    
+        <form action="/register" method="POST">
+            <p id="heading">Sign-In</p>
+            <i style="margin-left: 10%;" class="fa fa-user" aria-hidden="true"></i>
+            <label style="margin-left: 2%;font-weight: bold;font-size: 15px;" for="username">Username</label>
+            <br>
+            <input style="margin-left: 10%;margin-top: 3%;height: 30px;width: 80%;border: 1px solid black;border-radius: 5px;" id="username" type="text" placeholder="Username" name="username">
+            <br>
+            <i style="margin-left: 10%;margin-top: 5%;" class="fa fa-envelope" aria-hidden="true"></i>
+            <label style="margin-left: 2%;font-weight: bold;font-size: 15px;" for="username">E-Mail</label>
+            <br>
+            <input style="margin-left: 10%;margin-top: 3%;height: 30px;width: 80%;border: 1px solid black;border-radius: 5px;" id="username" type="text" placeholder="E-Mail" name="email">
+            <br>
+            <i style="margin-left: 10%;margin-top: 5%;" class="fa-solid fa-lock"></i>
+            <label style="margin-left: 2%;font-weight: bold;font-size: 15px;margin-top: 5%;" for="password">Password</label>
+            <br>
+            <input style="margin-left: 10%;margin-top: 3%;height: 30px;width: 80%;border: 1px solid black;border-radius: 5px;" id="password" type="password" placeholder="Password" name="password">
+            <br>
+            <input style="margin-top: 5%;margin-left: 10%" type="checkbox" id="Remember">
+            <label style="margin-top: 5%;" for="Remember">Remember me</label>
+            <a style="margin-left: 35%;" href="/login">Login</a>
+            <br>
+            <button type="submit" style="margin-top: 5%;margin-left: 10%;width: 80%;height: 30px;border: 1px solid black;border-radius: 5px;background-color: aqua;">Register</button>
+            
+           
+        </form>
+  
+</body>
+</html>

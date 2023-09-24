@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    margin: 20px;
+    text-align: center;
+}
+input{
+    width: 60%;
+    height: 50px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+label{
+    margin-left: 20%;
+    font-size: 22px;
+    font-weight: bold;
+}
+button{
+    margin-left: 20%;
+}
+/* body{
+    background-image: url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    } */
+    textarea{
+        display: block;
+        margin: auto;
+        border: 2px solid black;
+        border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+    </style>
+</head>
+<body>
+    
+    <h1>New Form</h1>
+    <form action="/products" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"  placeholder="Enter Name Of Product">
+        <label for="img">Image:</label>
+        <input type="text" id="img" name="img" placeholder="Enter Image Of Product">
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" placeholder="Enter Price Of Product">
+        <label for="desc">Description:</label>
+        <textarea  id="desc" style="  width: 60%;height: 120px;padding: 10px;" placeholder="Enter Description Of Product"></textarea>
+        <button type="submit" >Add Product</button>
+    </form>
+</body>
+</html>
