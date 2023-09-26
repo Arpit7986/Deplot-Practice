@@ -11,15 +11,18 @@
             background-image: url('https://img.freepik.com/free-vector/realistic-blurred-spring-background_52683-34521.jpg?w=996&t=st=1688618250~exp=1688618850~hmac=24316c8fb22a9215cce9b321e7fca8594e43429890e96d31139d7fb6b4b59b4a');
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-position: center;
         }
         form{
-            display: block;
             margin: auto;
-            width: 360px;
-            height: 460px;
-            margin-top: 7%;
+            width: 400px;
+            height: 400px;
             border-radius: 7px;
-            border: 2px solid black;
+          background-color: transparent;
         }
         #heading{
             text-align: center;
@@ -48,13 +51,17 @@
             <br>
             <input style="margin-left: 10%;margin-top: 3%;height: 30px;width: 80%;border: 1px solid black;border-radius: 5px;" id="password" type="password" placeholder="Password" name="password">
             <br>
-            <input style="margin-top: 5%;margin-left: 10%" type="checkbox" id="Remember">
-            <label style="margin-top: 5%;" for="Remember">Remember me</label>
-            <a style="margin-left: 35%;" href="/login">Login</a>
             <br>
             <button type="submit" style="margin-top: 5%;margin-left: 10%;width: 80%;height: 30px;border: 1px solid black;border-radius: 5px;background-color: aqua;">Register</button>
-            
-           
+            <p style="display: flex;justify-content: center;align-items: center; margin-top: 5%;">Already a User ?     <a  href="/login">Login</a> </p>
+            <p style="display:flex;justify-content: center;align-items: center;">Or</p>
+            <ul style="list-style: none;">
+                 <li style="display: block;font-size: 28px;text-align: center;margin-right: 12%;">
+                    <a style="color: blue;" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a style="color: red;" href="https://accounts.google.com/InteractiveLogin/signinchooser" target="_blank"><i class="fa-brands fa-google"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a style="color: blue;" href="https://www.linkedin.com/login" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
         </form>
   
 </body>
