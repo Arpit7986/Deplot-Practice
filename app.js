@@ -61,10 +61,10 @@ mongoose.connect(process.env.DB_URL)
 app.use(express.urlencoded({extended:true}))
 app.set('view engine','ejs')
 
-seedDB()
+// seedDB()
 
 app.get('/',(req,res)=>{
-    res.send("Arpit Jain")
+    res.redirect('/products');
 })
 
 //Products Routes
