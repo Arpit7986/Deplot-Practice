@@ -8,20 +8,22 @@
     <style>
         body{
             height: 100vh;
-            /* width: 100vh; */
             background-image: url('https://img.freepik.com/free-vector/realistic-blurred-spring-background_52683-34521.jpg?w=996&t=st=1688618250~exp=1688618850~hmac=24316c8fb22a9215cce9b321e7fca8594e43429890e96d31139d7fb6b4b59b4a');
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-position: center;
         }
+        
         form{
-            
-            margin: auto auto; 
-            /* align-content: center; */
-            width: 400px;
-            height: 400px;
-           
+            margin: auto;
+            width: 370px;
+            height: 380px;
             border-radius: 7px;
-            border: 2px solid black;
+          background-color: transparent;
         }
         #heading{
             text-align: center;
@@ -31,8 +33,6 @@
     </style>
 </head>
 <body >
-    
-    
         <form action="/login" method="post">
             <p id="heading">Login</p>
             <i style="margin: auto;margin-left: 10%;" class="fa fa-envelope" aria-hidden="true"></i>
@@ -51,7 +51,7 @@
             <button type="submit" style="display: block;margin: auto; margin-top: 5%;width: 80%;height: 30px;border: 1px solid black;border-radius: 5px;background-color: aqua;">Login</button>
           
             <p style="display: inline-block;margin-top: 5%;margin-left: 10%;">Don't have account ?</p>
-            <a style="display: inline-block;margin-top: 5%;margin-left: 18%;" target="_blank" href="/register">Register me</a>
+            <a style="display: inline-block;margin-top: 5%;margin-left: 20%;" target="_blank" href="/register">Register me</a>
         </form>
 
 </body>
