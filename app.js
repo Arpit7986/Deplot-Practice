@@ -64,7 +64,7 @@ app.set('view engine','ejs')
 // seedDB()
 
 app.get('/',(req,res)=>{
-    res.redirect('/products');
+    res.redirect('/login');
 })
 
 //Products Routes
